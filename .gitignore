@@ -1,0 +1,7 @@
+.build/
+.swiftpm/
+DerivedData/
+Resources/StorageSweep.iconset/
+Resources/StorageSweep.icns
+Resources/StorageSweepIcon.png
+.DS_Store
