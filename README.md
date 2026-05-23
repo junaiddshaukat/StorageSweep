@@ -17,6 +17,40 @@ The app is read-first and uses macOS Trash for deletion. It does not permanently
 - Reveal items in Finder and copy their paths.
 - Export a plain-text storage report to share or compare before cleanup.
 
+## How To Use
+
+1. Open Storage Sweep.
+2. Choose a scan target, such as your Home folder, Macintosh HD, or a custom folder.
+3. Click Scan and wait for the results.
+4. Review the items and check the safety label before deleting anything.
+5. Use Clean Safe for disposable cache and build files, or remove individual items one by one.
+6. Empty Trash later after you confirm everything still works normally.
+
+## Build And Run
+
+If you want to build the app from source and run it locally:
+
+1. Open Terminal in the project folder.
+2. Build the Swift package:
+
+	```zsh
+	swift build
+	```
+
+3. Build the macOS app bundle:
+
+	```zsh
+	./build-app.sh
+	```
+
+4. Open the app:
+
+	```zsh
+	open ".build/StorageSweep.app"
+	```
+
+5. If macOS warns about an unidentified developer, right-click the app and choose Open, or use System Settings -> Privacy & Security -> Open Anyway.
+
 ## Safety Labels
 
 **Safe** means the item matches a commonly disposable pattern, such as caches, `node_modules`, package manager caches, or Xcode DerivedData. These can normally be recreated.
